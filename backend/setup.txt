@@ -1,0 +1,53 @@
+Setting up the Virtual Environment
+
+1. pip install virtualenv
+
+If you get an error that might mean...
+- You don't have Python installed
+- your pip path is not in your environment variables
+
+2. virtualenv venv
+
+- You should see a "venv" folder pop up
+
+3. Create a src folder 
+
+4. Create the app.py folder in the src folder
+
+-  Both the venv and src folders should be in the backend folder 
+
+5. .\venv\Scripts\activate.bat
+
+6. Create a new powershell to access the virtual environment 
+
+7. pip install flask flask-PyMongo flask-cors
+
+8. pip install python-dateutil
+
+9. Working with UTC
+UTC in Python: https://www.geeksforgeeks.org/get-utc-timestamp-in-python/
+Convert Datetime to Different Timezones: https://pypi.org/project/tzlocal/
+
+10. Example Post
+
+{"user_id" : "60ea57e82cacc7192a526b62",
+"location" : "LA",
+"timestamp" : 12345678678,
+"review" : "nice",
+"rating" : "yes"}
+
+11. Images in MongoDB
+
+https://www.youtube.com/watch?v=DsgAuceHha4&ab_channel=PrettyPrinted
+
+12. pip install numpy
+
+13. pip install pillow
+
+14. pip install opencv-python
+
+
+        print('request files', request.files)
+        profile_image = request.files['profile_image']
+        print('filename', profile_image.filename)
+        print('profile image', profile_image)
